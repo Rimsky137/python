@@ -19,7 +19,7 @@
         def __str__(self):
             return "Клиент {}, Сумма {}".format(self.customer, self.summa())
 
-     def __getitem__(self, index):
+        def __getitem__(self, index):
         if isinstance(index, int):
             if 0 <= index < len(self.products_list):
                 return self.products_list[index]
